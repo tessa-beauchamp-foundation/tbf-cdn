@@ -1,0 +1,426 @@
+/***********************************************************
+ ***	PAGE
+ ***********************************************************/
+
+body {
+	background-color: #2e1d57;
+	/* orig dark: 1b1816; */
+	/* logo purp (32 bright): 331d52; */
+	/* logo purp (10 bright): 10091a*/
+}
+
+a {
+	color: #6d3dbf;
+}
+a:hover {
+	color: #6d3dbf;
+	text-decoration: underline;
+}
+
+.container {
+	/* padding: 0; */
+	max-width: 950px;
+}
+
+.bg_main {
+	background: #f5ede6 url('//cdn.tessabeauchamp.org/tbf/images/bg-main.jpg') repeat top left;
+}
+.bg_alt {
+	background: #f0ebe9 url('//cdn.tessabeauchamp.org/tbf/images/bg-alt.jpg') repeat top left;
+}
+
+/***********************************************************
+ ***	HEADER
+ ***********************************************************/
+
+div#header {
+}
+div#header_container {
+	background: url('//cdn.tessabeauchamp.org/tbf/images/bg-header-top.jpg') repeat-x 0 -3px;
+	height: 117px;
+}
+
+
+/***********************************************************
+ ***	LOGO
+ ***********************************************************/
+
+div#logo {
+	margin-top: 15px;
+}
+div#logo_title {
+	float: left;
+	font-family: 'Anton', sans-serif;
+	font-size: 32px;
+	line-height: 32px;
+	margin-left: 10px;
+}
+div#logo_title a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+	div#logo {
+		margin-top: 30px;
+	}
+	div#logo_image {
+		background: url('//cdn.tessabeauchamp.org/tbf/images/bball-logo.png') no-repeat top left;
+	}
+	div#logo_image,
+	div#logo_image a {
+		float: left;
+		height: 60px;
+		width: 60px;
+	}
+	div#logo_title {
+		height: 60px;
+		width: 260px;
+	}
+}
+
+
+/***********************************************************
+ ***	DONATIONS
+ ***********************************************************/
+
+div#donations {
+	background: url('//cdn.tessabeauchamp.org/tbf/images/donations.png') no-repeat 0 -3px;
+	float: right;
+	height: 114px; /* 117px */
+	width: 160px;
+}
+div#donations p {
+	color: #FFFFFF;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+div#donations div {
+	padding-top: 10px;
+	text-align: center;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+	div#donations {
+		width: 230px;
+	}
+}
+
+
+/***********************************************************
+ ***	NAVIGATION
+ ***********************************************************/
+
+.navbar-header button {
+	float: left;
+	margin-left: 15px;
+}
+.navbar-phone {
+	margin-bottom: 0;
+}
+.phone_alt_separator {
+	border-top: 1px solid #e0dcd7;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+	.phone_alt_separator{
+		border-top: none;
+	}
+	div#navigation {
+		background: url('//cdn.tessabeauchamp.org/tbf/images/nav-bg.png') repeat-x top left;
+	}
+	div#navigation div.nav_item {
+		float: left;
+		width: 14.28571428571429%;
+	}
+	div#navigation div.nav_item a#nav_tb,
+	div#navigation div.nav_item a#nav_tf,
+	div#navigation div.nav_item a#nav_s,
+	div#navigation div.nav_item a#nav_tcd,
+	div#navigation div.nav_item a#nav_tt,
+	div#navigation div.nav_item a#nav_n,
+	div#navigation div.nav_item a#nav_e {
+		color: #564b49;
+		font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		font-weight: bold;
+		float: left;
+		height: 60px;
+		margin: 0;
+		padding: 20px 0 0 0;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	/* Hover */
+	div#navigation div.nav_item a#nav_tb:hover,
+	div#navigation div.nav_item a#nav_tf:hover,
+	div#navigation div.nav_item a#nav_s:hover,
+	div#navigation div.nav_item a#nav_tcd:hover,
+	div#navigation div.nav_item a#nav_tt:hover,
+	div#navigation div.nav_item a#nav_n:hover,
+	div#navigation div.nav_item a#nav_e:hover,
+	/* Open */
+	div#navigation div.nav_item.open a#nav_tb,
+	div#navigation div.nav_item.open a#nav_tf,
+	div#navigation div.nav_item.open a#nav_s {
+		background: url('//cdn.tessabeauchamp.org/tbf/images/nav-highlight.jpg') repeat-x top left;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+}
+
+
+/***********************************************************
+ ***	FEATURE IMAGE (CARASEL)
+ ***********************************************************/
+
+div.carousel_container {
+	background: #FFFFFF; 
+	margin: 30px 0 35px 0;
+	padding: 10px; 
+}
+
+
+/***********************************************************
+ ***	PAGE LAYOUT
+ ***********************************************************/
+
+div.bg_main_divider {
+	background: url('//cdn.tessabeauchamp.org/tbf/images/section-shadow.png') repeat-x top left;
+	height: 4px;
+}
+
+div.bg_main_container {
+	padding-top: 50px;
+}
+
+h3.tbf_home {
+	font-family: 'Anton', sans-serif;
+	margin-top: 0px;
+}
+.loading_home {
+	font-size: 50px;
+	padding-top: 50px;
+	text-align: center;
+}
+.home_post_content ul {
+	padding-left: 20px;
+}
+.home_post_content ul li {
+	margin-bottom: 10px;
+}
+.home_post_content a.list-group-item:hover {
+	background-color: #e1d8f0;
+}
+.tbf_hide {
+	display: none; /* Home page - hide all posts */
+}
+
+.tbf_post {
+	background: #FFFFFF;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+.tbf_post h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.tbf_post h2 a {
+	color: #333;
+	text-decoration: none;
+}
+.tbf_post h4 {
+	margin-top: 20px;
+}
+.tbf_tags,
+.tbf_date {
+	font-size: 11px;
+	margin-top: 10px;
+}
+.tbf_tags a,
+.tbf_date a {
+	color: #CCCCCC;
+}
+.tbf_tags {
+	float: left;
+	width: 80%;
+}
+.tbf_date {
+	float: right;
+	text-align: right;
+	width: 20%;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+	div.bg_main_container {
+		background: url('//cdn.tessabeauchamp.org/tbf/images/bg-footer-top-purp.png') repeat-x bottom left;
+		padding-bottom: 50px;
+	}
+
+	.tbf_home_column {
+		min-height: 400px;
+	}
+}
+
+
+/***********************************************************
+ ***	POST CONTENT
+ ***********************************************************/
+
+.tbf_post div.quote_outer { background: url('//cdn.tessabeauchamp.org/tbf/images/quote-open.gif') no-repeat top left;  }
+.tbf_post div.quote_inner { background: url('//cdn.tessabeauchamp.org/tbf/images/quote-close.gif') no-repeat bottom right; }
+.tbf_post blockquote.quote {
+	border: 0px;
+	margin: 0px;
+	padding: 10px 60px;
+}
+.tbf_post .source {
+	padding: 10px 60px 0px 60px;
+} 
+
+
+
+/***********************************************************
+ ***	POST CONTENT - TESSA TOURNAMENT BRACKETS
+ ***********************************************************/
+
+
+table.bracket th {
+	color: #FFFFFF;
+	background-color: #6d3dbf;
+}
+
+table.bracket td.winner {
+	background-color: #e2d8f2;
+	font-weight: bold;
+}
+
+
+
+/*******************************************************************************
+ ICONS
+*******************************************************************************/
+
+div.iconCommon {
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-bottom: 16px;
+}
+
+div.iconLeft {
+	float: left;
+	margin-right: 20px;
+}
+
+
+/* 16 */
+div.icon16 {
+	min-height: 16px;
+}
+
+div.icon16 p {
+	line-height: 16px;
+	margin: 0 0 0 22px;
+}
+
+div.iconEmail16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/email.png'); }
+div.iconFacebook16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/facebook.png'); }
+div.iconTwitter16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/twitter.png'); }
+div.iconYoutube16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/youtube.png'); }
+div.iconWord16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/word.gif'); }
+div.iconExcel16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/excel.gif'); }
+div.iconPowerpoint16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/powerpoint.gif'); }
+div.iconPDF16 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/16/pdf.png'); }
+
+
+/* 24 */
+div.icon24 {
+	min-height: 24px;
+}
+
+div.icon24 p {
+	line-height: 24px;
+	margin: 0 0 0 30px;
+}
+
+div.iconEmail24 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/24/email.png'); }
+div.iconFacebook24 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/24/facebook.png'); }
+div.iconTwitter24 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/24/twitter.png'); }
+div.iconYoutube24 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/24/youtube.png'); }
+div.iconPaypal24 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/24/paypal.png'); }
+
+
+/* 32 */
+div.icon32 {
+	min-height: 32px;
+}
+
+div.icon32 p {
+	line-height: 32px;
+}
+
+div.iconEmail32 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/32/email.png'); }
+div.iconFacebook32 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/32/facebook.png'); }
+div.iconTwitter32 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/32/twitter.png'); }
+div.iconYoutube32 { background-image: url('//cdn.tessabeauchamp.org/tbf/images/icons/32/youtube.png'); }
+
+
+/***********************************************************
+ ***	FOOTER
+ ***********************************************************/
+
+div#footer a {
+	color: #FFFFFF;
+}
+
+div#footer_copy {
+	color: #DDDDDD;
+	padding: 20px 0 20px 0;
+}
+div#footer_copy a:hover {
+	color: #666666;
+	text-decoration: none;
+}
+div#footer_copy .copyright {
+	font-size: 12px;
+	line-height: 13px
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+	div#footer_nav {
+		background: #492d8a url('//cdn.tessabeauchamp.org/tbf/images/footer-line.jpg') repeat-x bottom left;
+		/* orig dark: 221e1c; */
+		padding: 20px 0 20px 0;
+	}
+
+	div#footer_nav p {
+		font-family: 'Anton', sans-serif;
+		font-size: 20px;
+	}
+
+	div#footer_nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	div#footer_nav ul li {
+		font-size: 12px;
+		margin: 0;
+		padding: 5px 0 5px 0;
+	}
+
+	div#footer_copy .copyright {
+		font-size: 13px;
+		line-height: 18.5714282989502px;
+	}
+}
